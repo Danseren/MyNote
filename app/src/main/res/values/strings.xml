@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MyNote</string>
+    <string-array name="my_notes">
+        <item>Note 1 Note text 01</item>
+        <item>Note 2 Note text 02</item>
+        <item>Note 3 Note text 03</item>
+        <item>Note 4 Note text 04</item>
+        <item>Note 5 Note text 05</item>
+    </string-array>
+    <string name="btn_properties">Свойства</string>
+    <string name="hello_blank_fragment">Добро пожаловать в Заметки.</string>
+    <string name="btn_start_note">Заметки</string>
+    <string name="btn_about">О приложении</string>
 </resources>
