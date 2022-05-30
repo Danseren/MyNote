@@ -4,7 +4,7 @@ public class MyNote {
 
     private String name;
     private String noteBody;
-    private String noteDate;
+    private String CreationDate;
 
     public String getName() {
         return name;
@@ -22,12 +22,12 @@ public class MyNote {
         this.noteBody = noteBody;
     }
 
-    public String getNoteDate() {
-        return noteDate;
+    public String getCreationDate() {
+        return CreationDate;
     }
 
-    public void setNoteDate(String noteDate) {
-        this.noteDate = noteDate;
+    public void setCreationDate(String creationDate) {
+        this.CreationDate = creationDate;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class MyNote {
         return "MyNote{" +
                 "name='" + name + '\'' +
                 ", noteBody='" + noteBody + '\'' +
-                ", noteDate='" + noteDate + '\'' +
+                ", noteDate='" + CreationDate + '\'' +
                 '}';
     }
 }

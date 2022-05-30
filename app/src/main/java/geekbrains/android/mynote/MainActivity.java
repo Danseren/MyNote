@@ -26,24 +26,26 @@ public class MainActivity extends AppCompatActivity {
             //Toast.makeText(MainActivity.this, myNote[i].toString(), Toast.LENGTH_LONG).show();
         }
 
-        ListOfNoteNamesFragment listOfNoteNamesFragment = new ListOfNoteNamesFragment();
-
+        StartFragment startFragment = new StartFragment();
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.fragment_container_1, listOfNoteNamesFragment)
+                .replace(R.id.fragment_container_1, startFragment)
                 .commit();
-
-        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            MyNoteFragment mnf = MyNoteFragment.newInstance(0);
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.fragment_container_2, mnf)
-                    .commit();
-        }
-
 
     }
 }
+
+/*
+    1. Разберитесь в различиях между serializable и parcelable;
+    2. Подумайте о функционале вашего приложения заметок. Какие экраны там могут быть, помимо основного со списком заметок?
+    Не обязательно сразу пытаться реализовать весь этот функционал, достаточно создать макеты и структуру,
+    а реализацию пока заменить на заглушки или всплывающие уведомления (Toast).
+    Используйте подход Single Activity для отображения экранов.
+    В качестве примера: на главном экране приложения у вас список всех заметок, при нажатии
+    на заметку открывается экран с этой заметкой.
+3. * Сделайте UI более сложным, создайте начальный экран приложения с переходами на список
+городов, настройки, сведения о приложении. Добавьте в свое приложение child-фрагменты. ДОБАВИТЬ!!!
+ */
 
 /*
 С этого урока мы начинаем разработку приложения с заметками.
