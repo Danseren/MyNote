@@ -8,7 +8,14 @@
         <item>Note 5 Note text 05</item>
     </string-array>
     <string name="btn_properties">Свойства</string>
-    <string name="hello_blank_fragment">Добро пожаловать в Заметки.</string>
+    <string name="about_text_fragment">Собственно вот и фрагмент About.</string>
+    <string name="tv_properties">Какие-то свойства приложения</string>
     <string name="btn_start_note">Заметки</string>
     <string name="btn_about">О приложении</string>
+    <string name="exit">Выход</string>
+    <string name="header">Header</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="drawer_header">123</string>
+    <string name="inf">Какая-то информация</string>
 </resources>

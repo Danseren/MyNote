@@ -8,6 +8,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -18,6 +21,7 @@ public class NotePropertiesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
         return inflater.inflate(R.layout.fragment_note_properties, container, false);
     }
 
@@ -25,14 +29,7 @@ public class NotePropertiesFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         super.onViewCreated(view, savedInstanceState);
-//        Bundle arguments = getArguments();
-//        if (arguments != null) {
-//            int index = arguments.getInt(ARG_INDEX);
-//            TextView tv_my_note = view.findViewById(R.id.tv_my_note);
-//            TypedArray str = getResources().obtainTypedArray(R.array.my_notes);
-//            tv_my_note.setText(str.getText(index));
-//            str.recycle();
-//        }
+
     }
 
     public static NotePropertiesFragment newInstance(int index) {
@@ -41,5 +38,14 @@ public class NotePropertiesFragment extends Fragment {
         args.putInt(ARG_INDEX, index);
         fragment.setArguments(args);
         return fragment;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        //inflater.inflate(R.menu.menu, menu);
+        MenuItem item = menu.findItem(R.id.action_about);
+        if (item != null) {
+            item.setVisible(false);
+        }
     }
 }

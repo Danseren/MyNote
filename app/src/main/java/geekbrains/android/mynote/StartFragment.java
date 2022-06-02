@@ -50,7 +50,14 @@ public class StartFragment extends Fragment {
         btn_about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "About", Toast.LENGTH_SHORT).show();
+                NotePropertiesFragment npf = NotePropertiesFragment.newInstance(0);
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+
+                fragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container_1, npf)
+                        .addToBackStack(null)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                        .commit();
             }
         });
     }
