@@ -9,6 +9,9 @@
         android:id="@+id/tv_note_properties"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold|italic"
         android:text="@string/tv_properties" />
 
 </FrameLayout>

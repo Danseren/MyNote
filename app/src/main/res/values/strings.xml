@@ -12,10 +12,14 @@
     <string name="tv_properties">Какие-то свойства приложения</string>
     <string name="btn_start_note">Заметки</string>
     <string name="btn_about">О приложении</string>
+    <string name="btn_custom_dialog">Toast and Go!</string>
     <string name="exit">Выход</string>
     <string name="header">Header</string>
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
     <string name="drawer_header">123</string>
     <string name="inf">Какая-то информация</string>
+    <string name="alert_message">Готовы ли Вы узнать что-нибудь о чем-нибудь?</string>
+    <string name="alert_positive">Yes</string>
+    <string name="alert_negative">No</string>
 </resources>

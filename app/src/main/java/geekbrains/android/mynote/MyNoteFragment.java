@@ -41,23 +41,17 @@ public class MyNoteFragment extends Fragment {
         btn_properties.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NotePropertiesFragment npf = NotePropertiesFragment.newInstance(0);
-                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-
-                fragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container_1, npf)
-                        .addToBackStack(null)
-                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                        .commit();
+                new CustomDialogFragment().show(requireActivity().getSupportFragmentManager(), CustomDialogFragment.TAG);
             }
         });
     }
 
-    public static MyNoteFragment newInstance(int index) {
+    protected static MyNoteFragment newInstance(int index) {
         MyNoteFragment fragment = new MyNoteFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_INDEX, index);
         fragment.setArguments(args);
         return fragment;
     }
+
 }
