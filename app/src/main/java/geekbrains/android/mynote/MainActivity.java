@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
         //Toast.makeText(MainActivity.this, my_notes[1], Toast.LENGTH_SHORT).show();
 
-        for (int i = 0; i < my_notes.length; i++) {
-
-            myNote[i] = new MyNote();
-            myNote[i].setName(my_notes[i].substring(0, 5));
-            myNote[i].setNoteBody(my_notes[i]);
-            //Toast.makeText(MainActivity.this, myNote[i].toString(), Toast.LENGTH_LONG).show();
-        }
+//        for (int i = 0; i < my_notes.length; i++) {
+//
+//            myNote[i] = new MyNote();
+//            myNote[i].setName(my_notes[i].substring(0, 5));
+//            myNote[i].setNoteBody(my_notes[i]);
+//            //Toast.makeText(MainActivity.this, myNote[i].toString(), Toast.LENGTH_LONG).show();
+//        }
 
         StartFragment startFragment = new StartFragment();
         getSupportFragmentManager()
@@ -119,6 +119,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+/*
+Двойной клик, выход из приложения
+1. Создайте список ваших заметок.
+2. Создайте карточку для элемента списка.
+3. Класс данных, созданный на шестом уроке, используйте для заполнения карточки списка.
+4. * Создайте фрагмент для редактирования данных в конкретной карточке. Этот фрагмент пока можно вызвать через основное меню.
+ */
 
 /*
 1. Используйте уведомления или диалоговые окна в своем приложении.

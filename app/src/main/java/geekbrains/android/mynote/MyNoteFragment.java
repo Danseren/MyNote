@@ -46,10 +46,10 @@ public class MyNoteFragment extends Fragment {
         });
     }
 
-    protected static MyNoteFragment newInstance(int index) {
+    protected static MyNoteFragment newInstance(MyNote myNote) {
         MyNoteFragment fragment = new MyNoteFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_INDEX, index);
+        args.putParcelable(ARG_INDEX, myNote);
         fragment.setArguments(args);
         return fragment;
     }

@@ -9,6 +9,7 @@
     </string-array>
     <string name="btn_properties">Свойства</string>
     <string name="about_text_fragment">Собственно вот и фрагмент About.</string>
+    <string name="start_text">Стартуем!</string>
     <string name="tv_properties">Какие-то свойства приложения</string>
     <string name="btn_start_note">Заметки</string>
     <string name="btn_about">О приложении</string>
