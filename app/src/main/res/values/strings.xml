@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">MyNote</string>
+    <string-array name="my_notes">
+        <item>Note 1 Note text 01</item>
+        <item>Note 2 Note text 02</item>
+        <item>Note 3 Note text 03</item>
+        <item>Note 4 Note text 04</item>
+        <item>Note 5 Note text 05</item>
+    </string-array>
+    <string name="btn_properties">Свойства</string>
+    <string name="about_text_fragment">Собственно вот и фрагмент About.</string>
+    <string name="start_text">Стартуем!</string>
+    <string name="tv_properties">Какие-то свойства приложения</string>
+    <string name="btn_start_note">Заметки</string>
+    <string name="btn_about">О приложении</string>
+    <string name="btn_custom_dialog">Toast and Go!</string>
+    <string name="exit">Выход</string>
+    <string name="header">Header</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="drawer_header">123</string>
+    <string name="inf">Какая-то информация</string>
+    <string name="alert_message">Готовы ли Вы узнать что-нибудь о чем-нибудь?</string>
+    <string name="alert_positive">Yes</string>
+    <string name="alert_negative">No</string>
+    <string name="add">Добавить</string>
+    <string name="clear">Очистить</string>
+    <string name="update">Обновить</string>
+    <string name="delete">Удалить</string>
+    <string name="date">Дата</string>
 </resources>
