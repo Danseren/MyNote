@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +18,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class MyNoteFragment extends Fragment {
 
     static private String ARG_INDEX = "index";
+    private IDataSource dataSource = new DataSource();
 
     @Nullable
     @Override
@@ -32,9 +34,13 @@ public class MyNoteFragment extends Fragment {
         if (arguments != null) {
             int index = arguments.getInt(ARG_INDEX);
             TextView tv_my_note = view.findViewById(R.id.tv_my_note);
-            TypedArray str = getResources().obtainTypedArray(R.array.my_notes);
-            tv_my_note.setText(str.getText(index));
-            str.recycle();
+
+//            tv_my_note.setText(dataSource.getMyNote().get(0).getNoteBody());
+//            TypedArray str = getResources().obtainTypedArray(R.array.my_notes);
+
+            Toast.makeText(requireContext(), String.valueOf(dataSource.getMyNote().size()), Toast.LENGTH_SHORT).show();
+//            tv_my_note.setText(str.getText(index));
+//            str.recycle();
         }
 
         Button btn_properties = view.findViewById(R.id.btn_properties);

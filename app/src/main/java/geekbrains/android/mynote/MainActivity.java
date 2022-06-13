@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] my_notes = getResources().getStringArray(R.array.my_notes);
-        MyNote myNote[] = new MyNote[my_notes.length];
+//        String[] my_notes = getResources().getStringArray(R.array.my_notes);
+//        MyNote myNote[] = new MyNote[my_notes.length];
 
-        //Toast.makeText(MainActivity.this, my_notes[1], Toast.LENGTH_SHORT).show();
+//        Toast.makeText(MainActivity.this, my_notes[1], Toast.LENGTH_SHORT).show();
 
 //        for (int i = 0; i < my_notes.length; i++) {
 //
@@ -119,6 +119,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+/*
+1. Сделайте фрагмент добавления и редактирования данных, если вы ещё не сделали его.
+2. Сделайте навигацию между фрагментами, также организуйте обмен данными между фрагментами.
+3. Создайте контекстное меню для изменения и удаления заметок.
+4. * Изучите, каким образом можно вызывать DatePicker в виде диалогового окна.
+Создайте текстовое поле, при нажатии на которое вызывалось бы диалоговое окно с DatePicker.
+ */
 
 /*
 Двойной клик, выход из приложения

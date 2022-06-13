@@ -66,6 +66,13 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
                     listener.onTextViewClick(list.get(getAdapterPosition()));
                 }
             });
+            itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+                    listener.onLongItemClick(view, getAdapterPosition());
+                    return true;
+                }
+            });
         }
 
         public View getItemView() {

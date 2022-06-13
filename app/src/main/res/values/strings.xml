@@ -23,4 +23,9 @@
     <string name="alert_message">Готовы ли Вы узнать что-нибудь о чем-нибудь?</string>
     <string name="alert_positive">Yes</string>
     <string name="alert_negative">No</string>
+    <string name="add">Добавить</string>
+    <string name="clear">Очистить</string>
+    <string name="update">Обновить</string>
+    <string name="delete">Удалить</string>
+    <string name="date">Дата</string>
 </resources>
