@@ -3,10 +3,17 @@ package geekbrains.android.mynote;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.google.gson.annotations.SerializedName;
+
 public class MyNote implements Parcelable {
 
+    //@SerializedName("name")
     private String name;
+
+    //@SerializedName("noteBody")
     private String noteBody;
+
+    //@SerializedName("CreationDate")
     private String CreationDate;
 
     protected MyNote(Parcel in) {

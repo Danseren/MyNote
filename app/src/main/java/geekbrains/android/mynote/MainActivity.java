@@ -15,9 +15,13 @@ import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    protected static IDataSource dataSource = new DataSource();
+    protected static ArrayList<MyNote> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,6 +123,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+/*
+1. Приложение SharedPreferences всё ещё работает некорректно: если добавить в него несколько заметок, то все они называются одинаково.
+Более того, если вы открываете приложение с уже созданными заметками, то при добавлении новой заметки, старые заметки удаляются из списка.
+Исправьте эту ситуацию.
+2. Сохраняйте список заметок в своём приложении заметок.
+3. * Обеспечьте хранение данных приложения через Firestore.
+4. * Организуйте аутентификацию пользователя через Google.
+5. * Изучите DataStore и замените SharedPreferences.
+ */
+
 
 /*
 1. Сделайте фрагмент добавления и редактирования данных, если вы ещё не сделали его.
